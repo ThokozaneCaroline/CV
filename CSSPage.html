@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+<meta name="keywords" content="Dick Stout, Metal Detecting, FMDAC, Treasure Hunting">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Stout Standards</title>
+
+<link rel="stylesheet" href="styles.css" type="text/css"/>
+
+<style type="text/css">
+body {
+    background: #DEB887;  
+    font-size:100&#37;;
+    margin:0;
+    padding:0;
+}
+#container {
+    width: 95%;
+     min-width:990px;/*keep BG color from stopping short*/
+    background: #97694F;/*header BG color moved to here*/
+}
+#header {
+    width: 990px;
+    text-align: center;
+    margin:0 auto;/*center it up in the container div*/
+    padding: 100px 0;
+    color:#000;
+}
+#header:after { /*contain header floats and allow dropdowns to overflow past header bottom*/
+    clear:both;
+    content:"";
+    display:block;
+    height:0;
+    font-size:0;
+}
+#header img {
+    float:right;
+    border:2px solid #000;
+}
+#sidebar {
+    width: 12em;
+    font-size:40px;
+}
+#MainContent {
+    background: #FFA07A;
+    margin-left:5em;
+    margin-right:5em;
+    padding:10px 20px 0 1em;
+}
+
+/*=== Begin Nav Styles ===*/
+#nav, #nav ul {
+    float:left;
+    width:176px;/*180px total with 2px borders*/
+    margin:0;
+    padding:0;
+    list-style:none;
+    background: #D2B48C;/*for testing only, remove when done*/
+    border:2px solid #000;
+}
+#nav li {
+    position:relative;/* set containing block for AP sub ul */
+    float:left;/*kill IE whitespace bug*/
+    width:176px;
+    text-align:center;/*center the text*/
+}
+#nav li a {
+    display:block;/*use block instead of float for IE6 */
+    width:100%;/*IE needs a width*/
+    /*height:3em; remove height to allow text to wrap*/
+    padding:.65em 0;/*set padding on top and bottom to create more height*/
+    text-decoration:underline;
+    color: #000;
+    font-weight:bold;
+    font-size:1em;
+}
+#nav li span {
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: url("images/UKflag.gif") no-repeat center center;
+}
+/* --- Text and Bg colors on hover ---*/
+#nav li:hover,
+#nav li.sfhover { 
+    background:#333;
+    visibility:visible;/* makes IE7 think something changes on hover, fixes IE sticking dropdown */
+}
+#nav li:hover a,
+#nav li.sfhover a {color:#FFF}
+
+#nav li:hover li a,
+#nav li.sfhover li a {color:#000}
+
+#nav li li:hover a,
+#nav li li.sfhover a {background:#333; color:#FFF}
+
+/* ------ Sub UL Drop Down ------ */
+#nav ul {
+    position:absolute;
+    width:176px;
+    left:176px;
+    top:-2px;/*recover top border (use "0" without borders)*/
+    margin-left:-999em;/* hide the sub ul */
+    background: #F5DEB3;/* IE needs some sort of BG on the nested ul */
+}
+#nav li:hover ul,
+#nav li.sfhover ul {
+    margin-left:0;/* reveal the sub ul on li:hover */
+}
+
+/*=== Begin Footer ===*/
+#footer {
+    width:100%;
+    clear:both;
+}
+#footer p {
+    margin:0;
+    padding:10px 0;
+    background:#DDD;
+    text-align:center;
+    font-size:1em;
+}
+.clearfloat {
+    clear:both;
+    height:0;
+    font-size:0;
+}
+</style>
+
+
+
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <ul id="nav">
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="Aboutme.html">About Me</a></li>
+            <li><a href="Photos.html">Photos &raquo;</a>
+                <ul>
+                    <li><a href="Photos.html">Photos Set 1</a></li>
+                    <li><a href="Photos2.html">Photos Set 2</a></li>
+                    <li><a href="Photos3.html">Photos Set 3</a></li>
+                    <li><a href="Photos4.html">Photos Set 4</a></li>
+                    <li><a href="Photos5.html">Photos Set 5</a></li>
+                    <li><a href="Photos6.html">Photos Set 6</a></li>
+                    <li><a href="Photos7.html">Photos Set 7</a></li>
+                    <li><a href="Photos8.html">Photos Set 8</a></li>
+                    <li><a href="Photos9.html">Photos Set 9</a></li>
+                    <li><a href="Photos10.html">Photos Set 10</a></li>
+                    <li><a href="Photos11.html">Photos Set 11</a></li>
+		 <li><a href="Photos12.html">Photos Set 12</a></li>  
+		  <li><a href="Photos13.html">Photos Set 13</a></li>
+		  <li><a href="Photos14.html">Photos Set 14</a></li>                </ul>
+            </li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="Coinhunting.html">Coinhunting</a></li>
+            <li><a href="goodole.html">Articles &raquo;</a>
+                <ul>
+                    <li><a href="goodole.html">The Goodole days</a></li>
+                    <li><a href="TreasureTips.html">Treasure Tips</a></li>
+                    <li><a href="Oldfolks.html">Old Folks, Old Tales</a></li>
+                    <li><a href="Bill.html">Cousin Bill</a></li>
+                    <li><a href="BasicRules.html">Coin Hunting Rules</a></li>
+                    <li><a href="Winter.html">Winter Treasure Hunting</a></li>
+                    <li><a href="Productive.html">Finding Productive Sites</a></li>
+                    <li><a href="Dan.html">Detector Dan</a></li>
+		 <li><a href="Writing.html">Sharing Your Experiences</a></li>
+		 <li><a href="Future.html">What the Future Holds</a></li>
+		 <li><a href="Bolts.html">Nuts & Bolts of a Metal Detector</a></li>
+                </ul>
+            <li><a href="clubs.html">Clubs</a></li>
+	    <li><a href="Scattershooting.html">Scattershooting</a></li>
+            <li><a id="flag" href="Malamute.html">Malamute Saloon</a></li>
+            <li><span></span></li>
+            <li><a href="Latest.html"><font color="#8B0000">LATEST NEWS</font></a></li>
+	 <li><a href="Recipes.html">Poor Gourmand</a></li>
+	 <li><a href="Link.html">Links</a></li>
+	 <li><a href="Books.html">Recommended Reading</a></li>
+            <li><a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g35-69865-a1">Guest Book</a></li>
+	    <br>
+        </ul>
+        <img src="images/Stoutstandards3.jpg" width="800" height="600" />
+     <!--end #header-->
+       </div> 
+    <div id="footer">
+        <p>Copyright &copy; 2010 Dick Stout. All Rights Reserved</p>
+    </div> <!--end #footer-->
+</div> <!--end #container-->
+
+</body>
+</html>
